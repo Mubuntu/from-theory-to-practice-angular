@@ -6,7 +6,7 @@
   <p class="card-text"
      [hidden]="data.hide">
     <!-- wordt vervangen door ng-content voor content projection-->
-    {{data.punchline}}
+    <!-- {{data.punchline}} -->
     <ng-content select=".punchline"></ng-content>
   </p>
   <a (click)="data.toggle()"

@@ -20,6 +20,8 @@ export class JokeListComponent implements OnInit {
 
   addJoke(joke) {
     this.jokes.unshift(joke);
+    // this.jokes.push(joke;
+    // this.jokes.pop()
   }
 
   deleteJoke(joke) {
