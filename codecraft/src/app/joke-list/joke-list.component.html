@@ -1,2 +1,8 @@
 <joke-form (jokeCreated)="addJoke($event)"></joke-form>
-<joke *ngFor="let j of jokes" [joke]="j" (jokeDeleted)="deleteJoke($event)"></joke>
+<!-- <joke *ngFor="let j of jokes" [joke]="j" (jokeDeleted)="deleteJoke($event)"></joke> -->
+<!-- content projection: projecting content from parentComponent (joke) to our component (jokeList)
+     downside: JokeList doensn't have acces to the properties or methods on the JokeComponent -->
+<joke *ngFor="let j of jokes" [joke]="j">
+  <span>{{ j.setup }} ?</span>
+  <h1>{{j.punchline}}</h1>
+</joke>
