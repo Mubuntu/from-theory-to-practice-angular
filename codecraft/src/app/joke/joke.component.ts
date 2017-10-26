@@ -14,17 +14,10 @@ import { Joke } from '../joke';
   templateUrl: './joke.component.html',
   styleUrls: ['./joke.component.css']
 })
-export class JokeComponent implements OnInit, OnChanges,
-OnInit,
-DoCheck,
-AfterContentInit,
-AfterContentChecked,
-AfterViewInit,
-AfterViewChecked,
-OnDestroy{
+export class JokeComponent {
 
   constructor() {
-    console.log(`new - data is ${this.data}`);
+    // console.log(`new - data is ${this.data}`);
   }
 
   @Input('joke') data: Joke;
@@ -35,28 +28,28 @@ OnDestroy{
   }
   // takes a param `changes`
   ngOnChanges() {
-    console.log(`\nngOnChanges - data is ${this.data}`);
+    // console.log(`\nngOnChanges - data is ${this.data}`);
   }
-  ngOnInit() {
-    console.log(`ngOnInit - data is ${this.data}`);
-  }
-  ngDoCheck() {
-    console.log("ngDoCheck")
-  }
-  ngAfterContentInit() {
-    console.log("ngAfterContentInit");
-  }
-  ngAfterContentChecked() {
-    console.log("ngAfterContentChecked");
-  }
-  ngAfterViewInit() {
-    console.log("ngAfterViewInit");
-  }
-  ngAfterViewChecked() {
-    console.log("ngAfterViewChecked");
-  }
-  ngOnDestroy() {
-    console.log("ngOnDestroy");
-  }
+  // ngOnInit() {
+  //   console.log(`ngOnInit - data is ${this.data}`);
+  // }
+  // ngDoCheck() {
+  //   console.log("ngDoCheck")
+  // }
+  // ngAfterContentInit() {
+  //   console.log("ngAfterContentInit");
+  // }
+  // ngAfterContentChecked() {
+  //   console.log("ngAfterContentChecked");
+  // }
+  // ngAfterViewInit() {
+  //   console.log("ngAfterViewInit");
+  // }
+  // ngAfterViewChecked() {
+  //   console.log("ngAfterViewChecked");
+  // }
+  // ngOnDestroy() {
+  //   console.log("ngOnDestroy");
+  // }
 
 }

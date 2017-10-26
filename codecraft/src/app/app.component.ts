@@ -8,5 +8,5 @@ import { Joke } from './joke';
 })
 export class AppComponent {
  title = 'Jokes';
-  joke: Joke = new Joke('A kid threw a lump of cheddar at me', 'I thought ‘That’s not very mature’');
+  joke: Joke = new Joke('A kid threw a lump of cheddar at me in a forest', 'I thought ‘That’s not very mature’');
 }
